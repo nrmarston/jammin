@@ -1,8 +1,8 @@
 import './App.css';
 import React from 'react';
-import {SearchBar} from '../SearchBar/SearchBar';
-import {SearchResults} from '../SearchResults/SearchResults';
-import {Playlist} from '../Playlist/Playlist';
+import SearchBar from '../SearchBar/SearchBar';
+import SearchResults from '../SearchResults/SearchResults';
+import Playlist from '../Playlist/Playlist';
 
 class App extends React.Component{
   
@@ -24,8 +24,8 @@ class App extends React.Component{
         <div className="App">
         <SearchResults searchResults={this.searchResults}/>
           <div className="App-playlist">
-          {/* // Add a SearchResults component */}
-          {/* // Add a Playlist component */}
+          <SearchBar />
+          <Playlist />
           </div>
         </div>
       </div>
