@@ -8,13 +8,13 @@ class App extends React.Component{
   
   constructor(props){
     super(props);
-    this.state.searchResults = {
-      name: 'One Life',
-      artist: 'Nico',
-      album: 'Black',
-      id: 'A1'
+    this.state = {
+      searchResults: [
+        {name: 'Nico', artist: 'Singa Blinga', album: 'Galbum', id: 'ABC123'},
+        {name: 'Rico', artist: 'Suave dem', album: 'Suavitel', id: 'ABC456'},
+        {name: 'Zeko', artist: 'Frenchman', album: 'Journey to France', id: 'ABC789'}
+      ]
     };
-    this.state.SearchResults = this.state.SearchResults.bind(this);
   }
   
   render(){
@@ -22,9 +22,9 @@ class App extends React.Component{
       <div>
         <h1>Ja<span className="highlight">mmm</span>ing</h1>
         <div className="App">
-        <SearchResults searchResults={this.searchResults}/>
-          <div className="App-playlist">
           <SearchBar />
+          <div className="App-playlist">
+          <SearchResults searchResults={this.state.searchResults}/>
           <Playlist />
           </div>
         </div>
