@@ -1,6 +1,6 @@
 let accessToken;
-const clientId = 'de88365c28b64d2ba1c2a27239aea5c2';
-const redirectUri = 'https://jammin.pages.dev/'; 
+const clientId = "de88365c28b64d2ba1c2a27239aea5c2";
+const redirectUri = "https://jammin.pages.dev/"; 
 
 const Spotify = {
   search(term){
